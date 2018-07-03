@@ -59,17 +59,18 @@
 	   float:left;
 	   text-align:center;
 	   color:#FF0000;
-     
-	 }
-	</style>
-<script language="javascript1.5">/
+    }
+</style>
+
+<script language="javascript1.5">
 function f1()
 {
 var course=parseInt(document.getElementById('course').value);
 var duration=parseInt(document.getElementById('duration').value);
-var total= (course* duration);
+var total=(course* duration);
 document.getElementById('ta').value=total;
 }
+
 </script>
 	
 </head>
@@ -87,20 +88,21 @@ menu column
 <div class="imagecol">
  </div>
  
-<div class="leftcontent">
-   <form method="post">
-   <div class="front form"><select name="course" id="course" required="required">
-   <option value "">Select course</option>
-    <option value ="20000">fashion design</option>
-	<option value ="30000">makeup</option>
-	<option value ="10000">Dance</option>
-   </select>
- </div>
- <div class="frontform"><input type="number" name="duration" id="duration" placeholder="Duration" onblur="f1()" /></div>
-  <div class="frontform"><input type="number" name="ta" id="ta" readonly="readonly" placeholder="Total amount"/></div>
-  <div class="frontform"><input type="submit" /> </div>
-  </div>
-  </form>
+ <div class="leftcontent">
+<form method="post">
+<div class="frontform">
+<select name="course" id="course" required="required">
+<option value="">select course</option>
+<option value="20000">fashion</option>
+<option value="30000">makeup</option>
+<option value="1000">dance</option>
+</select>
+</div>
+<div class="frontform"><input type="number" name="Duration" id="duration" placeholder="Duration" onblur="f1()"/>
+<div class="frontform"><input type="number" name="ta" id="ta" readonly="readonly" placeholder="Total Amount" /></div>
+<div class="frontform"><input type="submit" /></div>
+  
+ </form>
   </div>
   </div>
  
